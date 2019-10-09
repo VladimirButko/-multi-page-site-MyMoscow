@@ -1,0 +1,93 @@
+footer{
+    background-color: #172227;
+    max-width: 1600px;
+    height: 90px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-left-side{
+        margin-left: 116px;
+        p{
+            font-size: 13.5px;
+            font-family: "Myriad Pro";
+            color: rgb(196, 196, 196);
+            line-height: 1.333;
+            text-align: left;
+        }
+    }
+    .footer-center-side{
+        margin-right: 127px;
+        p{
+            font-size: 13.5px;
+            font-family: "Myriad Pro";
+            color: rgb(196, 196, 196);
+            line-height: 1.333;
+            text-align: center;
+        }
+    }
+    .footer-sociall-side{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 116px;
+        .social-buttons-icon{
+            width: 30px;
+            height: 30px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            &:nth-child(1){
+                margin-right: 7px;
+            }
+            &:nth-child(2){
+                background-color: rgb(255, 255, 255);
+                margin-right: 5px;
+            }
+            &:nth-child(3){
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+    @media (max-width: 780px){
+        &{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .footer-left-side{
+                margin-left: 0;
+            }
+            .footer-center-side{
+                margin-right: 0;
+            }
+            .footer-sociall-side{
+                margin-right: 0;
+            }
+        }
+    }
+    @media (max-width: 630px){
+        &{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .footer-left-side{
+                margin-left: 0;
+            }
+            .footer-center-side{
+                margin-right: 0;
+            }
+            .footer-sociall-side{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.pic-vk{
+    background-image: url(../social/vk.png);
+}
+.pic-facebook{
+    background-image: url(../social/facebook.png);
+}
+.pic-instagram{
+    background-image: url(../social/instagram.png);
+}
